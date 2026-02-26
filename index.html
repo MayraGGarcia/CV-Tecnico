@@ -1,55 +1,146 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - García Mayra</title>
-    <link rel="stylesheet" href="./style.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV — García Mayra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!--ENCABEZADO-->
-    <header>
-        <h1>García Mayra</h1>
-        <p>mi descripción</p>
-    </header>
 
-    <!--CONTENEDOR PRINCIPAL-->
-    <main>
-        <!--PERFIL-->
-        <section>
-            <h2>Perfil</h2>
-            <p>soy estudiante de...</p>
-        </section>
+  <header>
+    <div class="header-inner">
+      <p class="rol">Desarrolladora Frontend & Backend</p>
+      <h1>García <em>Mayra</em></h1>
+    </div>
+  </header>
 
-        <!--TECNOLOGÍAS-->
-        <section>
-            <h2>Tecnologías</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
-        </section>
+  <main>
 
-        <!--PROYECTOS-->
-        <section>
-            <h2>Proyectos</h2>
+    <!-- PERFIL -->
+    <section id="perfil">
+      <h2><span class="dot"></span>Perfil</h2>
+      <p>
+        Estudiante de Desarrollo de Software en la Universidad Nacional de
+        Hurlingham, con experiencia en Frontend y Backend. Me apasiona construir
+        interfaces limpias y funcionales, y escribir código que tenga sentido
+        tanto para quien lo usa como para quien lo lee. Disfruto los proyectos
+        donde la tecnología se cruza con ideas creativas, y me motiva seguir
+        aprendiendo con cada desafío nuevo.
+      </p>
+    </section>
 
-            <article>
-                <h3>Nombre</h3>
-                <p>descripcion</p>
-                <a href="#">link del proyecto</a>
-            </article>
-        </section>
+    <!-- HABILIDADES -->
+    <section id="tecnologias">
+      <h2><span class="dot"></span>Habilidades</h2>
 
-        <!--CONTACTO-->
-        <section>
-            <h2>Contacto</h2>
-            <p>Email</p>
-            <p>Github</p>
-        </section>
+      <div class="tech-group">
+        <span class="tech-group-label">Desarrollo</span>
+        <ul class="tech-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Testing inicial</li>
+        </ul>
+      </div>
 
-        <!--PIE-->
-    </main>
+      <div class="tech-group">
+        <span class="tech-group-label">Herramientas</span>
+        <ul class="tech-list">
+          <li>Microsoft Word</li>
+          <li>Microsoft Excel</li>
+          <li>Microsoft PowerPoint</li>
+          <li>Photoshop</li>
+          <li>Illustrator</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos">
+      <h2><span class="dot"></span>Proyectos</h2>
+
+      <article class="proyecto">
+        <div class="proyecto-top">
+          <div>
+            <h3>Próxima Estación</h3>
+            <p class="proyecto-sub">Red de Itinerarios Literarios</p>
+          </div>
+          <a href="https://github.com/MayraGGarcia/proxima-estacion" target="_blank" rel="noopener" class="proyecto-link">
+            GitHub ↗
+          </a>
+        </div>
+        <p>
+          Plataforma conceptual para lectores que organiza géneros y libros como
+          líneas de una red de metro. Aplica arquitectura desacoplada
+          (Frontend/Backend) con un diseño minimalista y brutalista inspirado en
+          la señalética ferroviaria clásica.
+        </p>
+      </article>
+
+      <article class="proyecto">
+        <div class="proyecto-top">
+          <div>
+            <h3>Red Asocial</h3>
+            <p class="proyecto-sub">Trabajo Práctico — Materia CIU · UNAHUR</p>
+          </div>
+          <a href="https://github.com/nachofazah/Ciu-RedSocial" target="_blank" rel="noopener" class="proyecto-link">
+            GitHub ↗
+          </a>
+        </div>
+        <p>
+          Aplicación web desarrollada como trabajo práctico para "Construcción
+          de Interfaces de Usuario". Red social simple con login, publicaciones
+          y feed de otros usuarios.
+        </p>
+      </article>
+
+      <article class="proyecto">
+        <div class="proyecto-top">
+          <div>
+            <h3>UnaHur — Red Anti-Social</h3>
+            <p class="proyecto-sub">Sistema Backend · UNAHUR</p>
+          </div>
+          <a href="https://github.com/EP-UnaHur-2025C2/anti-social-documental-grupo8" target="_blank" rel="noopener" class="proyecto-link">
+            GitHub ↗
+          </a>
+        </div>
+        <p>
+          Sistema backend para una red social llamada "UnaHur Anti-Social Net",
+          inspirada en plataformas populares que permiten a los usuarios realizar
+          publicaciones y recibir comentarios sobre las mismas.
+        </p>
+      </article>
+
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <h2><span class="dot"></span>Contacto</h2>
+      <ul class="contacto-list">
+        <li>
+          <span class="contacto-label">Email</span>
+          <a href="mailto:mayraggarciadev@gmail.com">mayraggarciadev@gmail.com</a>
+        </li>
+        <li>
+          <span class="contacto-label">GitHub</span>
+          <a href="https://github.com/MayraGGarcia" target="_blank" rel="noopener">github.com/MayraGGarcia</a>
+        </li>
+        <li>
+          <span class="contacto-label">LinkedIn</span>
+          <a href="https://www.linkedin.com/in/mayra-garc%C3%ADa-036447396/" target="_blank" rel="noopener">linkedin.com/in/mayra-garcia</a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>García Mayra · 2026</p>
+  </footer>
+
 </body>
 </html>
